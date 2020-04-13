@@ -1,0 +1,279 @@
+:root {
+  --dark-nav: #24292e;
+  --gray-header: #2b3137;
+  --blue-button: #0366d6;
+}
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 12px;
+  color: #666;
+}
+
+nav {
+  background-color: var(--dark-nav);
+  min-height: 78px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.navLeft a {
+  padding-right: 15px;
+}
+
+.navRight a {
+  padding-right: 15px;
+}
+
+.navRight input {
+  border-radius: 5px;
+  background-color: #666;
+  border: 1px solid #222;
+  height: 45px;
+  color: #ccc;
+  padding-right: 15px;
+}
+
+.navRight input[placeHolder*="Search"] {
+  padding-left: 15px;
+}
+
+a[title="sign up"] {
+  border: 1px solid #fff;
+  padding: 7px;
+  border-radius: 2px;
+}
+
+.logo svg {
+  fill: white !important;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+header {
+  background: #2b3137;
+  height: 635px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  background-image: url("./images/simple-codelines.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.textHeader {
+  margin: 50px;
+  width: 551px;
+  z-index: 3;
+}
+
+.textHeader h1 {
+  color: white;
+  font-size: 67px;
+}
+
+.textHeader p {
+  color: #ccc;
+  font-size: 12px;
+}
+
+.openSource {
+  color: white;
+  text-decoration: underline;
+}
+.business {
+  color: white;
+  text-decoration: underline;
+}
+
+.formHeader {
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  width: 381px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.formHeader label {
+  font-weight: bold;
+}
+
+.formHeader input[type="text"] {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.formHeader input[type="submit"] {
+  background-color: var(--blue-button);
+  color: white;
+  width: 100%;
+  height: 65px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.characteristics {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.characteristics span {
+  align-self: center;
+  margin-top: 15px;
+}
+
+.characteristics img {
+  margin-right: 5px;
+}
+.services {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 15px rgba(27, 31, 35, 0.15) !important;
+  margin: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+
+.boxServices {
+  flex: 2;
+  padding-right: 150px;
+}
+
+.boxServices p {
+  font-size: 12px;
+  color: #666;
+}
+
+.boxEnterprise {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxEnterprise svg,
+span {
+  align-self: center;
+}
+
+.boxEnterprise span {
+  margin-top: 10px;
+}
+
+.boxEnterprise p {
+  font-size: 10px;
+  color: #666;
+  text-align: center;
+}
+
+.startFreeTrial {
+  background-color: var(--blue-button);
+  color: white;
+  width: 200px;
+  height: 65px;
+  border: none;
+  border-radius: 3px;
+}
+
+.contactSales {
+  background-color: white;
+  color: var(--blue-button);
+  border: 1px solid var(--blue-button);
+  width: 200px;
+  height: 65px;
+  border-radius: 3px;
+}
+
+.boxTalk {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxTalk svg,
+span {
+  align-self: center;
+}
+
+.boxTalk span {
+  margin-top: 10px;
+}
+
+.boxTalk p {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.companies p {
+  color: #666;
+}
+
+.companiesLogos {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.companiesLogos img {
+  height: 25px;
+  margin-right: 35px;
+  flex-wrap: wrap;
+}
+
+.teams {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.teams p {
+  align-self: center;
+  max-width: 600px;
+}
+
+.teams h2 {
+  align-self: center;
+}
